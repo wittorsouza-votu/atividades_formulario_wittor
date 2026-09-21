@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+
+<body>
+    <h1>pagina de estudos</h1>
+    <form method="get" action="envio_dados.php">
+        <input type="text" name="nome" placeholder="digite seu nome aqui">
+        <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
+    <form>
+        <input type="button" value="clique aqui" onclick="msg()">
+    </form>
+    <script>
+        function msg() {
+            alert("voce clicou no botao!");
+
+        }
+    </script>
+    <form>
+        <input type="checkbox" name="veiculo1" value="bicicleta"> eu temho uma bicicleta<br>
+        <input type="checkbox" name="veiculo2" value="carro">eu tenho um carro<br>
+        <input type="checkbox" name="veiculo3" value="moto">eu tenho uma moto<br>
+        selecione sua cor preferida: <input type="color" name="favcor" value="#0000ff">
+        data de nascimento: <input type="date" name="nascimento">
+        <br><br><br>
+        <input type="file" name="arquivos">
+    </form>
+    <br><br><br>
+
+    <!--- para permitir seleção de multiplos arquivos:-->
+    <form>
+        <input type="file" name="arquivos" multiple>
+    </form>
+    <form>
+        <input type-file name="arquivos:--">
+    </form>
+    <form>
+        quantdade(entre 1 e 5): <input type="number" name="quantidade" min="1" max="5">
+        <br>
+        <input type="passaword" name="senha" placeholder="digite sua senha">
+        <p>qual sua idade?</p>
+        <input type="radio" name="idade" value="18_22">18 a 22 <br>
+        <input type="radio" name="idade" value="23 a 30">23  30 <br>
+        <input type="radio" name="idade" value="mias31">acima de 31<br>
+        defina seu nivel de satisfação:<br>
+        pouco satisfatorio
+        <input type="range" name="satisfação" min="0" max="10">
+        muito satisfatorio
+    </form>
+    <form>
+        <label for="emaill">digites seu e-mail</label>
+        <input type="email" id="emaill" name="email"><br><br>
+        <label for="pin">digite seu codigo</label>
+        <imput type="text" id="pin" name="pin" maxlength="4"><br><br>
+        <input type="reset" value="reset">
+        <imput type="submit" value="submit"></imput>
+        pesquisar:<input type="serach" name="q">
+        telefone:<input type="tel" name="usertel"> <br>
+        link do seu website: <input type="url" name="webpage"><br>
+        <textarea>
+            area de texto com um texto inicial dentro
+        </textarea>
+        <select> name="lista" id="listas"
+        <option>selecione uma opção</option>
+        <option>macarrão</option>
+        <option>pizza</option>
+        <option>nhoque</option>
+        <option>canelone</option>
+        </select>
+        <fieldset>
+            <legend>formulario</legend>
+            <form> 
+                <input type="text">
+        </fieldset>
+    </form>
+    
+</body>
+
+</html>
